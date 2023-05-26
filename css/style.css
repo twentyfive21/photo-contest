@@ -29,6 +29,7 @@ header a, button {
     color: var(--white); 
     font-size: 16px;
     padding: 0px 15px;
+    cursor: pointer;
 }
 #neon {
     color: var(--neon-teal);
@@ -101,5 +102,55 @@ header a, button {
     height: 100px;
     border-radius: 60px;
     font-size: 30px;
+}
+/* ~~~~~~~~~~~~ submissions page ~~~~~~~~~~~~~ */
+.main-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+ .submit-container {
+    background-color: pink;
+    width: 80%;
+}
+ .submit-card {
+    display: flex;
+    width: 345px;
+    height: 193px;
+    margin: 20px 20px;
+} 
+.input-box {
+    background-color: var(--teal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    width: 481px;
+    height: 608px;
+    border-radius: 8px;
+    margin: 80px 20px 0px 20px;
+} 
+.input-box input {
+    height: 40px;
+    width: 80%;
+    border-radius: 8px;
+    font-size: 16px;
+    color: gray;
+    margin: 10px 0px;
+    padding-left: 20px;
+}
+.input-box h2 {
+    font-size: 24px;
+}
+.input-box button {
+    color: var(--neon-teal);
+    border: 2px solid var(--neon-teal);
+    background-color: transparent;
+    width: 190px;
+    height: 61px;
+    border-radius: 60px;
+    margin-top: 40px;
+    cursor: pointer;
 }
 
