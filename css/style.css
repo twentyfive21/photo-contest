@@ -16,6 +16,7 @@
 
 a{
     text-decoration: none;
+    color: black;
 }
 /* ~~~~~~~~~~~~~~~ Index page css ~~~~~~~~~~~~~~~ */
 header {
@@ -110,8 +111,11 @@ header a, button {
     width: 100%;
 }
  .submit-container {
+    width: 70%;
     background-color: pink;
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
  .submit-card {
     display: flex;
@@ -153,4 +157,40 @@ header a, button {
     margin-top: 40px;
     cursor: pointer;
 }
+/* ~~~~~~~~~~~~ details page ~~~~~~~~~~~~~ */
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px
+}
+.detail-container img {
+   width: 90%;
+   border-radius:10px;
+}
+.detail-container h2, p {
+    margin: 20px 0px 30px 0px;
+    font-weight: 400;
+}
+.detail-container h2 {
+    font-size: 36px;
+}
+.detail-container button{
+    width: 116px;
+    height: 35px;
+    background-color: var(--teal);
+    color: var(--neon-teal);
+    border-radius: 60px;
+    border: none;
+    margin: 0px 10px;
+    padding-bottom: 30px;
+}
 
+/* ~~~~~~~~~~~~ media query header mobile ~~~~~~~~~~~~~ */
+header a, button {
+    font-size: 16px;
+    padding: 10px 7px;
+}
+#neon {
+    font-size: 16px;
+}
