@@ -81,18 +81,18 @@ header a, button {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px 70px;
 }
-
+.about-main img {
+    object-fit: cover;
+    border-radius: 8px;
+}
 .about-main {
     display: flex;
     font-size: 20px;
     gap: 40px;
     margin: 30px 70px;
-}
-
-.about-main p {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 .about-main button {
     background-color: var(--teal);
@@ -101,6 +101,7 @@ header a, button {
     height: 100px;
     border-radius: 60px;
     font-size: 30px;
+    margin-top: 60px;
 }
 /* ~~~~~~~~~~~~ submissions page ~~~~~~~~~~~~~ */
 .main-container {
@@ -288,4 +289,48 @@ header a, button {
         height: 35px;
         padding: 0px
     }
+}
+/* ~~~~~~~~~~~~ media query about page~~~~~~~~~~~~~ */
+@media (max-width: 1050px) {
+.about-main button {
+    width: 250px;
+    height: 70px;
+    font-size: 20px;
+}
+.about-main img {
+width: 400px;
+}
+.about-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: -40px;
+    font-size: 18px;
+}
+.about-main button {
+    margin-top: -5px;
+}
+}
+@media (max-width: 850px) {
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+}
+@media (max-width: 480px) {
+    .about-main img {
+        width: 300px;
+ }
+ .about-main button {
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+}
+.about-main {
+    margin: -20px 40px;
+}
+.about-container {
+    margin-top: 30px;
+}
 }
