@@ -246,7 +246,7 @@ header a, button {
         width: 300px;
     }
     .submit-card div { 
-        margin: -23px 15px 0px 15px;
+        margin: -5px 15px 0px 15px;
      }
     .input-box {
         width: 300px;
@@ -332,5 +332,8 @@ width: 400px;
 }
 .about-container {
     margin-top: 30px;
+}
+.about-heading h1 {
+    font-size: 30px;
 }
 }
