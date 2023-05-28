@@ -18,6 +18,7 @@ a{
     text-decoration: none;
     color: black;
 }
+
 /* ~~~~~~~~~~~~~~~ Index page css ~~~~~~~~~~~~~~~ */
 header {
     background-color: var(--teal);
@@ -36,12 +37,21 @@ header a, button {
     color: var(--neon-teal);
     font-size: 36px;
 }
-#index-img {
+/* #index-img {
     width: 100%;
     position: relative;
+} */
+.index-box {
+    background-image: url(/assets/index.png);
+    width: 100vw;
+    min-height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-#index-bubble {
+ #index-bubble {
     background-color: var(--teal);
     color: var(--white);
     height: 437px;
@@ -51,23 +61,30 @@ header a, button {
     justify-content: center;
     align-items: center;
     border-radius: 150px 150px 160px 0px;
-    padding: 70px 20px;
+    padding: 20px 20px;
     text-align: center;
+    /* 
     position: absolute;
-    top: 600px;
+    top: 600px; */
 }
 #index-button {
     color: var(--neon-teal);
     border: 2px solid var(--neon-teal);
-    width: 23%;
-    height: 13%;
+    width: 418px;
+    height: 115px;
     border-radius: 60px;
     font-size: 150%;
     background-color: transparent;
-    position: absolute;
+    /* position: absolute;
     left: 1050px;
-    top: 910px;
+    top: 910px; */
+} */
+.index-box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
+
 /* ~~~~~~~~ dark mode button css ~~~~~~~~~ */
 #darkMode {
     color: var(--neon-teal);
