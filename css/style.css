@@ -369,10 +369,10 @@ width: 400px;
         width: 600px;
         border-radius: 100px;
         top: 850px;
-        left: 200px;
+        left: 220px;
     }
     #index-button {
-        left: 350px;
+        left: 370px;
         top: 1250px;
     } 
     .index-box {
@@ -385,29 +385,54 @@ width: 400px;
         width: 500px;
         font-size: 20px;
         top: 850px;
-        left: 150px;
+        left: 170px;
     }
     #index-button {
         width: 300px;
         height: 90px;
-        left: 250px;
+        left: 270px;
         top: 1200px;
         font-size: 22px;
     } 
-    @media (max-width: 4800px) {
+}
+@media (max-width: 770px) {
+    #index-bubble {
+        left: 140px;
+    }
+    #index-button {
+        left: 240px;
+    } 
+}
+    @media (max-width: 480px) {
         #index-bubble {
             height: 300px;
             width: 330px;
             font-size: 16px;
             top: 450px;
-            left: 20px;
+            left: 45px;
         }
         #index-button {
             width: 200px;
             height: 60px;
-            left: 80px;
+            left: 110px;
             top: 800px;
             font-size: 18px;
         } 
     }
- }
+    @media (max-width: 385px) {
+        #index-bubble {
+            left: 30px;
+        }
+        #index-button {
+            left: 90px;
+        } 
+    }
+    @media (max-width: 360px) {
+        #index-bubble {
+            left: 15px;
+        }
+        #index-button {
+            left: 80px;
+        } 
+    }
+ 
