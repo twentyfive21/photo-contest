@@ -1,53 +1,52 @@
 const imageSets = [
     {
-      id:1,  
-      name: 'Andrew Smith',
-      title: 'Innocence',
-      images: [
-        'https://images.unsplash.com/photo-1512540315028-2c1a6497da04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
-        'https://images.unsplash.com/photo-1543332143-4e8c27e3256f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80',
-        'https://images.unsplash.com/photo-1612209246511-5b81949e5fdd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
-        'https://images.unsplash.com/photo-1587402092301-725e37c70fd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80',
-        'https://images.unsplash.com/photo-1492680967812-4b9226a079de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80'
-      ],
-    },
-    {
-      id:2,
-      name: 'Jane Doe',
-      title: 'Nature Adventures',
-      images: [
-        'https://images.unsplash.com/photo-1533692328991-08159ff19fca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80',
-        'https://images.unsplash.com/photo-1508515803898-7bb2d7703093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
-        'https://images.unsplash.com/photo-1503557122744-b650066ba62f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
-        'https://images.unsplash.com/photo-1516298773066-c48f8e9bd92b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
-        'https://images.unsplash.com/photo-1598726668148-99946ef1cb42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1732&q=80'
-      ],
-    },
-    {
-      id:3,
-      name: 'Irna Tawsen',
-      title: 'Faces of the World',
-      images: [
-        'https://images.unsplash.com/photo-1674574124649-778f9afc0e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
-        'https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1630&q=80',
-        'https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
-        'https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80',
-        'https://images.unsplash.com/photo-1604186837056-8e7c2867b6f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'
-      ],
-    },
-    {
-      id:4,
+      id:1,
       name: 'Mark Dale',
-      title: 'Wild Animals',
+      title: 'Wild Animals',  
       images: [
         'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80',
         'https://images.unsplash.com/photo-1504173010664-32509aeebb62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1654&q=80',
         'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
         'https://images.unsplash.com/photo-1531494391841-6ac2ef3859b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
-        'https://images.unsplash.com/photo-1550358864-518f202c02ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'
+        'https://images.unsplash.com/photo-1516467508483-a7212febe31a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80'
+      ],
+    },
+    {
+      id:2,
+      name: 'Lily Phan',
+      title: 'Faces of the World',
+      images: [
+        'https://images.unsplash.com/photo-1542015354406-36ae110009fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1595887543484-e4a94a97abf1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1591260565565-8bd6c8b6a438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fGZhY2VzfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1594470643046-8255fe0a2911?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1633058851505-6376593aa34f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80'
+      ],
+    },
+    {
+      id:3,
+      name: 'Andrew Smith',
+      title: 'Innocence',
+      images: [
+        'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1175&q=80',
+        'https://images.unsplash.com/photo-1543332143-4e8c27e3256f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80',
+        'https://images.unsplash.com/photo-1612209246511-5b81949e5fdd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+        'https://images.unsplash.com/photo-1576201836106-db1758fd1c97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1477005264461-b0e201668d92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
       ]
+    },
+    {
+      id:4,
+      name: 'Celine Vipiana ',
+      title: 'Nature',
+      images: [
+        'https://images.unsplash.com/photo-1557750255-c76072a7aad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1508515803898-7bb2d7703093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+        'https://images.unsplash.com/photo-1503557122744-b650066ba62f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+        'https://images.unsplash.com/photo-1516298773066-c48f8e9bd92b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+        'https://images.unsplash.com/photo-1553521306-9387d3795516?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80'
+      ],
     }
-
   ]; 
   
   // themeBtn.addEventListener("click", (e)=>{
@@ -58,14 +57,13 @@ const imageSets = [
   let $ = document;
   let c = console.log;
 
-  const themeBtn = $.getElementById("darkMode");
+ const themeBtn = $.getElementById("darkMode");
 
-  function toggleTheme () {
+ const toggleTheme = () => {
     const body = $.querySelector("body");
     const heading = $.querySelectorAll("h1, h2");
     const para = $.querySelectorAll("p");
     const tealBtn = $.querySelectorAll(".teal-border");
-    console.log(tealBtn);
     // dark mode 
     if(body.style.backgroundColor === "white") {
       body.style.backgroundColor = "#2A3B49";
@@ -74,7 +72,7 @@ const imageSets = [
         heading[i].style.color = "white";
         for(let i = 0; i < para.length; i++){
           para[i].style.color = "white";
-        }
+        } 
         for(let i = 0; i < tealBtn.length; i++){
           tealBtn[i].style.borderColor = "#7BFFE9";
         }
@@ -86,14 +84,68 @@ const imageSets = [
         heading[i].style.color = "black";
         for(let i = 0; i < para.length; i++){
           para[i].style.color = "black";
-        }
+        } 
         for(let i = 0; i < tealBtn.length; i++){
           tealBtn[i].style.borderColor = "transparent";
         }
       }
     }
   }
-themeBtn.addEventListener("click", toggleTheme);
+  themeBtn.addEventListener("click", toggleTheme);
+
+window.onload = function () {
+  gallery(imageSets);
+};
+
+// creates div and adds images dynamically on submissions page
+const gallery = (imageSet) => {
+  const submitBox = $.querySelector(".submit-container");
+  const allImages = imageSet.map(image => {
+    return `<a href="/html/detail.html?id=${image.id}">
+    <div class="submit-card">
+    <img src="${image.images[4]}">
+    <div>
+    <p>${image.title} - ${image.name}</p>
+    <p class="see-more">see more</p>
+    </div>
+    </div>
+    </a>`;
+  })
+  submitBox.innerHTML = allImages.join("");
+}
+
+// takes submission from user and adds it to the gallery 
+const submitButton = $.querySelector("#submit-btn"); 
+// preventdedault stops page from adding value when nothing is inputted
+// e.preventDefault();
+const addingUserImg = (e) => {
+  const user = $.querySelector("#input-name").value;
+  const title = $.querySelector("#input-title").value;
+  const img1 = $.querySelector("#input-img1").value;
+  // const img2 = $.querySelector("#input-img2").value;
+  // const img3 = $.querySelector("#input-img3").value;
+  const submitBox = $.querySelector(".submit-container");
   
+  // creating image to add to the gallery 
+  const userImg = $.createElement("div");
+  userImg.innerHTML = `<div class="submit-card">
+  <img src="${img1}">
+  <div>
+  <p>${title} - ${user}</p>
+  <p class="see-more">see more</p>
+  </div>
+  </div>`;
+  submitBox.insertBefore(userImg, submitBox.firstChild);
+
+  $.querySelector("#input-name").value = "";
+  $.querySelector("#input-title").value = "";
+  $.querySelector("#input-img1").value = "";
+  $.querySelector("#input-img2").value = "";
+  $.querySelector("#input-img3").value = "";
+}
+submitButton.addEventListener("click", addingUserImg);
+// need to check why line 135 is adding the p tag when input
+// submitted is blank even though required option is on
 
 
+// slider function 
