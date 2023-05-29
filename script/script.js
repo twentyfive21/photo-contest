@@ -64,11 +64,12 @@ const imageSets = [
     const body = $.querySelector("body");
     const heading = $.querySelectorAll("h1, h2");
     const para = $.querySelectorAll("p");
-    const tealBtn = $.querySelectorAll("button");
+    const tealBtn = $.querySelectorAll(".teal-border");
     console.log(tealBtn);
     // dark mode 
     if(body.style.backgroundColor === "white") {
       body.style.backgroundColor = "#2A3B49";
+      themeBtn.innerHTML = "&#x263E";
       for(let i = 0; i < heading.length; i++){
         heading[i].style.color = "white";
         for(let i = 0; i < para.length; i++){
@@ -80,6 +81,7 @@ const imageSets = [
       }
     } else { // light mode 
       body.style.backgroundColor = "white";
+      themeBtn.innerHTML = "&#9788";
       for(let i = 0; i < heading.length; i++){
         heading[i].style.color = "black";
         for(let i = 0; i < para.length; i++){
