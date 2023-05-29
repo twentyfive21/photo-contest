@@ -200,7 +200,6 @@ header a, button {
     background-color: var(--teal);
     color: var(--neon-teal);
     border-radius: 60px;
-    border: none;
     margin: 0px 10px;
 }
 

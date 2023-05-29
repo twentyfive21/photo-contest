@@ -64,32 +64,31 @@ const imageSets = [
     const body = $.querySelector("body");
     const heading = $.querySelectorAll("h1, h2");
     const para = $.querySelectorAll("p");
-    const aboutBtn = $.querySelector("#about-btn");
-    const prevBtn = $.querySelector("#previous-btn");
-    const nextBtn = $.querySelector("#next-btn");
+    const tealBtn = $.querySelectorAll("button");
+    console.log(tealBtn);
     // dark mode 
     if(body.style.backgroundColor === "white") {
       body.style.backgroundColor = "#2A3B49";
-      // prevBtn.style.borderColor = "#7BFFE9";
       for(let i = 0; i < heading.length; i++){
         heading[i].style.color = "white";
         for(let i = 0; i < para.length; i++){
           para[i].style.color = "white";
         }
+        for(let i = 0; i < tealBtn.length; i++){
+          tealBtn[i].style.borderColor = "#7BFFE9";
+        }
       }
-      // nextBtn.style.borderColor = "#7BFFE9";
-      aboutBtn.style.borderColor = "#7BFFE9", nextBtn.style.borderColor = "#7BFFE9"
     } else { // light mode 
       body.style.backgroundColor = "white";
-      // prevBtn.style.borderColor = "white";
       for(let i = 0; i < heading.length; i++){
         heading[i].style.color = "black";
         for(let i = 0; i < para.length; i++){
           para[i].style.color = "black";
         }
+        for(let i = 0; i < tealBtn.length; i++){
+          tealBtn[i].style.borderColor = "transparent";
+        }
       }
-      // nextBtn.style.borderColor = "transparent";
-      aboutBtn.style.borderColor = "transparent";
     }
   }
 themeBtn.addEventListener("click", toggleTheme);
