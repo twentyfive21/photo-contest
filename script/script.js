@@ -125,7 +125,11 @@ const addingUserImg = (e) => {
   // const img2 = $.querySelector("#input-img2").value;
   // const img3 = $.querySelector("#input-img3").value;
   const submitBox = $.querySelector(".submit-container");
-  
+
+  if (user === "" || title === "" || img1 === "") {
+    // Handle the case when required fields are empty (e.g., show an error message)
+    return;
+  }
   // creating image to add to the gallery 
   const userImg = $.createElement("div");
   userImg.innerHTML = `<div class="submit-card">
@@ -144,8 +148,5 @@ const addingUserImg = (e) => {
   $.querySelector("#input-img3").value = "";
 }
 submitButton.addEventListener("click", addingUserImg);
-// need to check why line 135 is adding the p tag when input
-// submitted is blank even though required option is on
-
 
 // slider function 
