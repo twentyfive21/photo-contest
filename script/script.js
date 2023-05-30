@@ -103,7 +103,7 @@ const gallery = (imageSet) => {
   const allImages = imageSet.map(image => {
     return `<a href="/html/detail.html?id=${image.id}">
     <div class="submit-card">
-    <img src="${image.images[4]}">
+    <img src="${image.images[0]}">
     <div>
     <p>${image.title} - ${image.name}</p>
     <p class="see-more">see more</p>
@@ -118,7 +118,7 @@ const gallery = (imageSet) => {
 const submitButton = $.querySelector("#submit-btn"); 
 // preventdedault stops page from adding value when nothing is inputted
 // e.preventDefault();
-const addingUserImg = (e) => {
+const addingUserImg = () => {
   const user = $.querySelector("#input-name").value;
   const title = $.querySelector("#input-title").value;
   const img1 = $.querySelector("#input-img1").value;
@@ -148,5 +148,3 @@ const addingUserImg = (e) => {
   $.querySelector("#input-img3").value = "";
 }
 submitButton.addEventListener("click", addingUserImg);
-
-// slider function 
