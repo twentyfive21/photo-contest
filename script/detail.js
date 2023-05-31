@@ -95,36 +95,11 @@ window.onload = function () {
       });
     };
     displayImg();
-  
   }
   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // dark mode 
+  // dark mode theme 
   const themeBtn = $.getElementById("darkMode");
 
  const toggleTheme = () => {
