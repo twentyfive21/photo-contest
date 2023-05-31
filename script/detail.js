@@ -57,14 +57,18 @@ let c = console.log;
 let currentId;
 let currentMatching;
 window.onload = function () {
+  // gets the id from the window
     const urlParams = new URLSearchParams(window.location.search);
     currentId = urlParams.get("id");
-  
+  // filters through and matches the id clicked in the link and stores the array in machingIds
     const matchingIds = imageSets.filter(item => item.id == currentId);
+    // currentMatching stores the images of the current id selected
     currentMatching = matchingIds[0].images;
   
+    // sets the current index for the images to display and will get updated with each button click 
     let currentIndex = 0;
   
+    // currentMatching stores images only ; matchingIds stores the entire array with object inside 
     const displayImg = () => {
       const detailContainer = document.querySelector(".detail-container");
       detailContainer.innerHTML = `
@@ -80,13 +84,14 @@ window.onload = function () {
       const prevBtn = document.getElementById("previous-btn");
       const nextBtn = document.querySelector("#next-btn");
     
+      // previous image 
       prevBtn.addEventListener("click", () => {
         if (currentIndex > 0) {
           currentIndex--;
           displayImg();
         }
       });
-    
+    // next image 
       nextBtn.addEventListener("click", () => {
         if (currentIndex < currentMatching.length - 1) {
           currentIndex++;
