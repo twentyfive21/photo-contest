@@ -8,4 +8,4 @@
 ---
 I implemented event listeners in JavaScript to provide a dynamic user experience. These event listeners helped capture user interactions and trigger appropriate actions, making the application interactive and engaging. I also learned how to manipulate the DOM and use the console to make sure I was getting the correct data back. 
 ---
-#### I had fun making this project and learned a lot from building this website. 
+### I had fun making this project and learned a lot from building this website. 
