@@ -59,22 +59,45 @@ let currentMatching;
 window.onload = function () {
     const urlParams = new URLSearchParams(window.location.search);
     currentId = urlParams.get("id");
+  
     const matchingIds = imageSets.filter(item => item.id == currentId);
-
     currentMatching = matchingIds[0].images;
-    const displayImg = `<h1>${matchingIds[0].title}</h1>
-    <h2>${matchingIds[0].name}</h2>
-    <img src="${currentMatching[0]}">
-    <p> of ${currentMatching.length}</p>
-    <div>
-    <button id="previous-btn" class="teal-border">Previous</button>
-    <button id="next-btn" class="teal-border">Next</button>
-    </div>`;
-
-    const detailContainer = document.querySelector(".detail-container");
-    detailContainer.innerHTML = displayImg;
-}
-
+  
+    let currentIndex = 0;
+  
+    const displayImg = () => {
+      const detailContainer = document.querySelector(".detail-container");
+      detailContainer.innerHTML = `
+        <h1>${matchingIds[0].title}</h1>
+        <h2>${matchingIds[0].name}</h2>
+        <img src="${currentMatching[currentIndex]}">
+        <p>${currentIndex + 1} of ${currentMatching.length}</p>
+        <div>
+          <button id="previous-btn" class="teal-border">Previous</button>
+          <button id="next-btn" class="teal-border">Next</button>
+        </div>
+      `;
+      const prevBtn = document.getElementById("previous-btn");
+      const nextBtn = document.querySelector("#next-btn");
+    
+      prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          displayImg();
+        }
+      });
+    
+      nextBtn.addEventListener("click", () => {
+        if (currentIndex < currentMatching.length - 1) {
+          currentIndex++;
+          displayImg();
+        }
+      });
+    };
+    displayImg();
+  
+  }
+  
 
 
 
